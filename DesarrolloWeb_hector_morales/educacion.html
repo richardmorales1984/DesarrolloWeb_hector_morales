@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Ricardo Morales">
+		<meta name="viewport" content="width=device-width,user-scalable=no">
+		<meta name="description" content="Hoja de vida digital">
+		<meta name="keywords" content="Ejercicio HTML">
+		<title>Hoja de vida digital</title>
+	</head>
+	
+	<body>
+		<header>
+			<svg height="90" width="200">
+			<circle cx="25" cy="40" r="20" fill="blue" stroke="black" stroke-width="1" />
+			  <text x="10" y="20" style="fill:white;">
+				<tspan x="10" y="45">R M</tspan>
+			  </text>
+			  El navegador no soporta SVG.
+			</svg>
+				<hgroup>
+					<h1>Curriculum Vitae</h1>
+					<h2>Héctor Ricardo Morales Reyes</h2>
+					<h3>13 de septiembre de 1984, León, Gto..</h3>
+				</hgroup>
+		</header>
+		
+		<nav>
+			<p>
+				<a href="index.html" title="inicio">Inicio</a> |
+				<a href="#" title="educacion">Educación</a> |
+				<a href="experiencia.html" title="experiencia">Experiencia</a>		
+			</p>
+		</nav>
+		
+		<section>
+			<article>
+				<h2>Educación </h2>
+				<table border="1" width="600px">
+					<thead>
+						<tr>
+							<th>Año</th>
+							<th>Institución</th>
+							<th>Lugar</th>
+							<th>¿Culminó?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2011-2012</td>
+							<td>Maestría en Tecnologías Web</td>
+							<td>Universidad de la Salle Bajío</td>
+							<td>Título y cédula profesional</td>							
+						</tr>
+						<tr>
+							<td>2010-2011</td>
+							<td>Especialidad en Tecnologías Web</td>
+							<td>Universidad de la Salle Bajío</td>
+							<td>Certificado de terminación de estudios</td>							
+						</tr>
+						<tr>
+							<td>2002-2008</td>
+							<td>Licenciatura en Informática</td>
+							<td>Instituto Tecnológico de León</td>
+							<td>Certificado de terminación de estudios</td>							
+						</tr>
+					</body>
+				</table>
+			</article>
+			
+			<article>
+				<h2>Agregar Estudios </h2>
+				<form name="formulario">
+					<label for="anio"><strong>Año</strong></label>
+						<select name="anio">
+							<option value="2015">2015</option>
+							<option value="2016">2016</option>
+							<option value="2017">2017</option>
+							<option value="2018">2018</option>
+							<option value="2019">2019</option>
+						</select>
+						<br>
+						<br>
+					<label for="nombre"><strong>Institución</strong></label>
+						<input type="text" name="nombre" required />
+						<br>
+						<br>
+					<label for="lugar"><strong>Lugar</strong></label>
+						<textarea name="lugar">
+						</textarea>
+						<br>
+						<br>
+						<input type="submit" value="Enviar" />
+				</form>
+			</article>
+
+		<footer>
+			Contacto: <strong>hector.moralesr@sabes.edu.mx</strong>
+		</footer>
+			
+	</body>
+</html>
